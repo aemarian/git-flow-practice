@@ -1,4 +1,8 @@
 git flow is awesome
+<<<<<<< HEAD
+change on readme
+change 2
+=======
 
 Careless Whisper
 George Michael
@@ -53,3 +57,4 @@ That you had to leave me alone
 
 Hi Team.
 A team.
+>>>>>>> master
