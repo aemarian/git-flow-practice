@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./styles/main.css";
 
-function App() {
+const App = () => {
   const [data, setData] = useState("");
   useEffect(() => {
     const fetchData = async () => {
@@ -10,10 +10,12 @@ function App() {
       setData(res.data);
     };
     fetchData();
-  }, []);
+  }, [data.message]);
+  const [count, setCount] = useState(0);
   return (
     <div className="app">
       <header className="">Dog or No?</header>
+      <p className="yes">You clicked yes {count} times</p>
       <img src={data.message} alt="dog probably" className="image" />
       <form>
         <input
@@ -21,18 +23,18 @@ function App() {
           name="affirmative"
           value="YES"
           className="button one"
-          onClick={() => setData(useState)}
+          onClick={() => setData()}
+          onClick={() => setCount(count + 1)}
         />
         <input
           type="button"
           name="negative"
           value="NO"
           className="button two"
-          onClick={() => setData(alert("but it is"))}
         />
       </form>
     </div>
   );
-}
+};
 
 export default App;

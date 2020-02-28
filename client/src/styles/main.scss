@@ -20,17 +20,13 @@
   text-align: center;
 }
 .image {
-  height: 31.25rem;
+  height: 22.25rem;
   border-radius: 10px;
   box-shadow: 10px 10px 10px;
-  // transition: all 0.3s ease-in-out 0s;
-  // &:hover {
-  //   cursor: default;
-  //   transform: rotate(360deg);
-  //   transition: all 0.3s ease-in-out 0s;
-  // }
 }
-
+.yes {
+  text-shadow: 4px 4px lime;
+}
 .button {
   width: 35%;
   padding: 4rem;
