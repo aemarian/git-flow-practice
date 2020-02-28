@@ -1,0 +1,34 @@
+.app {
+  width: 320px;
+  margin: auto;
+
+  &__pic-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__main-pic {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__keep-btn {
+    color: white;
+    width: 100px;
+    height: 30px;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  &__pass-btn {
+    @extend .app__keep-btn;
+  }
+}
