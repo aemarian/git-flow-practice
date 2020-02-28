@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: unset;
+}
+
+#root {
+  font-family: fantasy;
+  font-size: 5rem;
+  text-shadow: 4px 4px red;
+  height: 100vw;
+  background: repeating-linear-gradient(45deg, #c7f3ff, #fdc7ff 10px, #ffdcf5 10px, #f2f4c3 20px);
+  border: 10px solid purple;
+  text-align: center;
+}
+
+.image {
+  height: 31.25rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px;
+          box-shadow: 10px 10px 10px;
+}
+
+.button {
+  width: 35%;
+  padding: 4rem;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: fantasy;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: white;
+  background: repeating-linear-gradient(135deg, lime, lime 10px, black 10px, black 20px);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.one {
+  background-color: purple;
+  border: none;
+}
+
+.two {
+  background-color: pink;
+  border: none;
+}
+
+.two:hover {
+  background: repeating-linear-gradient(45deg, lime, lime 10px, black 10px, black 20px);
+}
+/*# sourceMappingURL=main.css.map */
